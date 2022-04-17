@@ -11,7 +11,7 @@ $red: #ff7b7b;
 $darkpurple: #2f3850;
 
 :root {
-	font-size: 24px;
+	font-size: clamp(16px, 4vw, 24px);
 }
 
 body {
