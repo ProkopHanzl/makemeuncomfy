@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+$light: #fcecd9;
+$red: #ff7b7b;
+$darkpurple: #2f3850;
+
+:root {
+	font-size: 24px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Plus Jakarta Sans", sans-serif;
+	color: $darkpurple;
+	background-color: $light;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	padding: 2rem;
+	.logo {
+		font-weight: 800;
+		font-style: italic;
+		.color-1 {
+			color: $darkpurple;
+		}
+		.color-2 {
+			color: $red;
+		}
+		.color-3 {
+			color: $darkpurple;
+		}
+	}
+}
+
+main {
+	flex: 1;
+	display: grid;
+	place-items: center;
+}
+
+footer {
+	padding: 2rem;
+	text-transform: lowercase;
+	text-align: center;
+	opacity: 0.75;
+}
+
+a[href] {
+	color: $red;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+button {
+	width: clamp(10rem, calc(100% - 4rem), 20rem);
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	font-family: inherit;
+	background: none;
+	border: 0.15rem solid $darkpurple;
+	color: inherit;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		color: $red;
+		outline: 0;
+	}
+}

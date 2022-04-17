@@ -1,0 +1,21 @@
+@import "base";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: min(calc(100% - 4rem), 30rem);
+	min-height: 50vh;
+	.text-container {
+		flex: 3;
+		display: grid;
+		place-items: center;
+		p {
+			font-size: 2rem;
+		}
+	}
+	.button-container {
+		flex: 1;
+		display: grid;
+		place-items: center;
+	}
+}
