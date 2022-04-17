@@ -47,4 +47,16 @@ document.getElementById("uncomfy-button").addEventListener("click", function () 
 	document.activeElement.blur();
 });
 
+if (navigator.canShare) {
+	document.getElementById("share-button").addEventListener("click", function () {
+		navigator.share({
+			title: "makemeuncomfy",
+			text: document.getElementById("uncomfy").innerHTML,
+			url: "https://prokophanzl.github.io/makemeuncomfy/",
+		});
+	});
+} else {
+	document.getElementById("share-button").style.display = "none";
+}
+
 setUncomfy();
