@@ -59,4 +59,10 @@ if (navigator.canShare) {
 	document.getElementById("share-button").style.display = "none";
 }
 
+document.getElementById("tweet-button").addEventListener("click", function () {
+	var text = document.getElementById("uncomfy").innerHTML;
+	var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=https://prokophanzl.github.io/makemeuncomfy/";
+	window.open(url, "_blank");
+});
+
 setUncomfy();
