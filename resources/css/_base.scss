@@ -27,7 +27,8 @@ body {
 }
 
 header {
-	padding: 2rem;
+	height: 6rem;
+	line-height: 6rem;
 	.logo {
 		font-weight: 800;
 		font-style: italic;
@@ -44,13 +45,14 @@ header {
 }
 
 main {
-	flex: 1;
+	height: calc(100vh - 12rem);
 	display: grid;
 	place-items: center;
 }
 
 footer {
-	padding: 2rem;
+	height: 6rem;
+	line-height: 6rem;
 	text-transform: lowercase;
 	text-align: center;
 	opacity: 0.75;
