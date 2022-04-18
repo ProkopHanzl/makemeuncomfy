@@ -72,6 +72,7 @@ var sentences = [
 	"Imagine stepping into a puddle in just socks.",
 	"Imagine biting down on some sandpaper and yanking it from in between your teeth.",
 	"Imagine eating some salad. But there's sand in it.",
+	"<span style='position: relative; left: 2rem;'>This text is not centered.</span>",
 ];
 
 function setUncomfy() {
